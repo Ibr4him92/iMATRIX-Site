@@ -2,10 +2,11 @@ import "./video.css";
 import { FaRandom } from "react-icons/fa";
 interface Props {
   imgSrc: string;
+  toScroll: React.MutableRefObject<null>;
 }
-const Video = ({ imgSrc }: Props) => {
+const Video = ({ imgSrc, toScroll }: Props) => {
   return (
-    <div className="videos" id="videos">
+    <div className="videos" id="videos" ref={toScroll}>
       <div className="main-heading">
         <h2 data-aos="fade-in">Videos Seaction</h2>
         <p data-aos="fade-out">

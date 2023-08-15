@@ -1,7 +1,11 @@
 import "./landing.css";
 import { BsWhatsapp, BsFacebook, BsTwitter } from "react-icons/bs";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
-const Landing = () => {
+
+interface Props {
+  goDown: () => void;
+}
+const Landing = ({ goDown }: Props) => {
   return (
     <div className="landing">
       <div className="container">
@@ -23,7 +27,7 @@ const Landing = () => {
           </div>
           <div className="go-down">
             {/* onclick="ScrollToAbout()" */}
-            <MdOutlineKeyboardDoubleArrowDown id="go-down" />
+            <MdOutlineKeyboardDoubleArrowDown onClick={goDown} id="go-down" />
           </div>
         </div>
       </div>

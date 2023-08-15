@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Header from "./Components/HeaderSection/Header";
 import Landing from "./Components/LandingSection/Landing";
 import About from "./Components/AboutSeaction/About";
@@ -16,20 +17,37 @@ const App = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  const about = useRef(null);
+  const contract = useRef(null);
+  const videoSection = useRef(null);
+  const contact = useRef(null);
+  const footer = useRef(null);
+
+  const scrollToSection = (elementRef: any) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
       <div className="bg-img">
         <div className="overlay">
-          <Header />
-          <Landing />
+          <Header
+            onScrollAbout={() => scrollToSection(about)}
+            onScrollContract={() => scrollToSection(contract)}
+            onScrollVideo={() => scrollToSection(videoSection)}
+            onScrollContact={() => scrollToSection(contact)}
+          />
+          <Landing goDown={() => scrollToSection(footer)} />
         </div>
       </div>
-      <About imgSrc="../public/AboutImage.png" />
-      <Contract imgSrc="../public/ContractImage.jpg" />
-      <Video imgSrc="../public/videoImage.jpg" />
-      <Contact imgSrc="../public/contact.svg" />
-      <Footer />
+      <About imgSrc="../public/AboutImage.png" toScroll={about} />
+      <Contract imgSrc="../public/ContractImage.jpg" toScroll={contract} />
+      <Video imgSrc="../public/videoImage.jpg" toScroll={videoSection} />
+      <Contact imgSrc="../public/contact.svg" toScroll={contact} />
+      <Footer toScroll={footer} />
     </>
   );
 };

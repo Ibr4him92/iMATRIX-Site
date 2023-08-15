@@ -2,11 +2,12 @@ import "./contact.css";
 
 interface Props {
   imgSrc: string;
+  toScroll: React.MutableRefObject<null>;
 }
 
-const Contact = ({ imgSrc }: Props) => {
+const Contact = ({ imgSrc, toScroll }: Props) => {
   return (
-    <div className="contact">
+    <div className="contact" ref={toScroll}>
       <div className="main-heading">
         <h2 data-aos="fade-in">Contact-Us</h2>
         <p data-aos="fade-out">

@@ -9,9 +9,13 @@ import {
 } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 
-const Footer = () => {
+interface Props {
+  toScroll: React.MutableRefObject<null>;
+}
+
+const Footer = ({ toScroll }: Props) => {
   return (
-    <footer>
+    <footer ref={toScroll}>
       <div className="container">
         <div className="box">
           <h1 data-aos="fade-in">iMATRIX</h1>
@@ -31,19 +35,28 @@ const Footer = () => {
             <li data-aos="fade-out"> Articles About Trading</li>
             <li>
               <AiOutlineDoubleRight id="right-arrow" />{" "}
-              <a href="#">Treat Trading Like a Business</a>
+              <a href="https://www.investopedia.com/articles/trading/10/top-ten-rules-for-trading.asp#toc-rule-3-use-technology-to-your-advantage">
+                Treat Trading Like a Business
+              </a>
             </li>
             <li>
               <AiOutlineDoubleRight id="right-arrow" />
-              <a href="#">Use Technology to Your Advantage</a>
+              <a href="https://www.investopedia.com/articles/trading/10/top-ten-rules-for-trading.asp#toc-rule-4-protect-your-trading-capital">
+                Use Technology to Your Advantage
+              </a>
             </li>
             <li>
               <AiOutlineDoubleRight id="right-arrow" />
-              <a href="#"> Protect Your Trading Capital</a>
+              <a href="https://www.investopedia.com/articles/trading/10/top-ten-rules-for-trading.asp#toc-rule-5-become-a-student-of-the-markets">
+                {" "}
+                Protect Your Trading Capital
+              </a>
             </li>
             <li>
               <AiOutlineDoubleRight id="right-arrow" />
-              <a href="#">Become a Student of the Markets</a>
+              <a href="https://www.investopedia.com/articles/trading/10/top-ten-rules-for-trading.asp#toc-rule-6-risk-only-what-you-can-afford-to-lose">
+                Become a Student of the Markets
+              </a>
             </li>
           </ul>
         </div>
@@ -56,7 +69,7 @@ const Footer = () => {
           </p>
           <p data-aos="fade-in">
             <MdLocationPin id="location" />
-            Our Location: <br /> <span>Jordan , Ammnan</span>
+            Our Location: <br /> <span>Jordan , Amman</span>
           </p>
           <p data-aos="fade-in">
             <BsFillClockFill id="clock" /> Work Time:

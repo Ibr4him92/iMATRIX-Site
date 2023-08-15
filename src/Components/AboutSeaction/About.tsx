@@ -2,11 +2,12 @@ import "./about.css";
 
 interface Props {
   imgSrc: string;
+  toScroll: React.MutableRefObject<null>;
 }
 
-const About = ({ imgSrc }: Props) => {
+const About = ({ imgSrc, toScroll }: Props) => {
   return (
-    <div className="about">
+    <div className="about" ref={toScroll}>
       <div className="main-heading">
         <h2 data-aos="fade-in">About Seaction</h2>
         <p data-aos="fade-out">

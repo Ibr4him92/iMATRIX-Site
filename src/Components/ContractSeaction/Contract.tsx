@@ -2,11 +2,12 @@ import "./contract.css";
 
 interface Props {
   imgSrc: string;
+  toScroll: React.MutableRefObject<null>;
 }
 
-const Contract = ({ imgSrc }: Props) => {
+const Contract = ({ imgSrc, toScroll }: Props) => {
   return (
-    <div className="contract">
+    <div className="contract" ref={toScroll}>
       <div className="main-heading">
         <h2 data-aos="fade-in">Contract Seaction</h2>
         <p data-aos="fade-out">
