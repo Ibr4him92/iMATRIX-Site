@@ -11,6 +11,7 @@ import Contract from "./Components/ContractSeaction/Contract";
 import Video from "./Components/VideosSection/Video";
 import Contact from "./Components/ContactSection/Contact";
 import Footer from "./Components/FooterSection/Footer";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   //Animation
@@ -32,6 +33,7 @@ const App = () => {
 
   return (
     <>
+      <ScrollToTop />
       <div className="bg-img">
         <div className="overlay">
           <Header
