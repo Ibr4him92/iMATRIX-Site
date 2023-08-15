@@ -1,0 +1,125 @@
+.about {
+    position: relative;
+    padding-inline: 30px;
+    padding-bottom: 50px;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 60px;
+}
+
+.about .container .col {
+    position: relative;
+}
+
+.about .container h1 {
+    letter-spacing: 2px;
+}
+
+.about .container h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.about .container p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.about .item img {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+/* Responsive */
+@media (min-width: 2000px) {
+    .about .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+        grid-gap: 100px;
+    }
+
+    .about .container .col {
+        position: relative;
+    }
+
+    .about .container h1 {
+        letter-spacing: 2px;
+    }
+
+    .about .container h3 {
+        font-size: 70px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .about .container p {
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    .about .item img {
+        width: 900px;
+        height: 900px;
+        object-fit: contain;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .about .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .about .item img {
+        width: 400px;
+        height: 600px;
+        object-fit: contain;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .about .container {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about .container h1 {
+        letter-spacing: 2px;
+    }
+
+    .about .container h3 {
+        margin-bottom: 30px;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .about .container p {
+        font-size: 15px;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    .about .item img {
+        display: none;
+    }
+
+}

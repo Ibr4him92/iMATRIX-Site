@@ -1,0 +1,124 @@
+/* Contract Section */
+.contract {
+    position: relative;
+    padding-inline: 30px;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.contract .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 60px;
+}
+
+.contract .container .col {
+    position: relative;
+}
+
+.contract .container h1 {
+    letter-spacing: 2px;
+}
+
+.contract .container h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.contract .container p {
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.contract .item img {
+    width: 100%;
+    height: 530px;
+}
+
+/* Responsive */
+@media (min-width: 2000px) {
+    .contract .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+        grid-gap: 100px;
+    }
+
+    .contract .container .col {
+        position: relative;
+    }
+
+    .contract .container h1 {
+        letter-spacing: 2px;
+    }
+
+    .contract .container h3 {
+        font-size: 70px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .contract .container p {
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    .contract .item img {
+        width: 900px;
+        height: 900px;
+        object-fit: contain;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .contract .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .contract .item img {
+        width: 100%;
+        height: 600px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .contract .container {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contract .container h1 {
+        letter-spacing: 2px;
+    }
+
+    .contract .container h3 {
+        margin-bottom: 30px;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .contract .container p {
+        font-size: 15px;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    .contract .item img {
+        display: none;
+    }
+
+}

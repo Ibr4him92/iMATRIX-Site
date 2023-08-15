@@ -1,0 +1,240 @@
+/*  Landing Section*/
+
+.landing {
+    position: relative;
+}
+
+.landing .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+
+.landing .col {
+    padding-top: 120px;
+    margin-right: 20px;
+    padding-inline: 60px;
+}
+
+.landing .col h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 45 px;
+    color: white;
+    transition: 0.5s;
+}
+
+.landing .col p {
+    color: white;
+    font-size: 20px;
+}
+
+
+.landing .col .btn {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.landing .col button {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.landing .col button:hover {
+    background-color: #f1f1f1d3;
+}
+
+.landing .go-down {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    bottom: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.landing .go-down:hover {
+    color: #f1f1f1
+}
+
+.landing .go-down #go-down {
+    animation: bouncing 1.5s infinite;
+}
+
+
+.landing .social {
+    color: white;
+    transform: translateY(125px);
+    font-size: 25px;
+}
+
+.landing .social #facebook,
+#whatsapp,
+#twitter {
+    margin-inline-end: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    ;
+}
+
+.landing .social i:hover {
+    color: #f1f1f1d3;
+}
+
+/* Responsive */
+/* Landing */
+
+@media (min-width: 1400px) {
+    .landing .container {
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
+
+    .landing .col h1 {
+        font-size: 40px;
+    }
+
+    .landing .col p {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .landing .container {
+        grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+    }
+
+    .landing .col h1 {
+        padding-top: 200px;
+        font-size: 70px;
+    }
+
+    .landing .col p {
+        font-size: 55px;
+    }
+
+    .landing .col .btn {
+        padding-top: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .landing .col .btn button {
+        width: 500px;
+        height: 70px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .landing .go-down {
+        font-size: 30px;
+        bottom: -190px;
+    }
+
+    .landing .social {
+        transform: translateY(200px);
+        font-size: 55px;
+    }
+
+    .landing .social i {
+        margin-inline-end: 100px;
+    }
+}
+
+
+@media (max-width: 1262px) {
+    .landing .col h1 {
+        font-size: 30px;
+    }
+
+    .landing .col p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 951px) {
+    .landing .col h1 {
+        font-size: 25px;
+    }
+
+    .landing .col p {
+        width: 450px;
+    }
+}
+
+
+@media (max-width: 737px) {
+    .landing .col h1 {
+        font-size: 20px;
+    }
+
+    .landing .col p {
+        font-size: 10px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .landing .col p {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .landing .col .btn {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 654px) {
+    .landing .go-down {
+        display: none;
+    }
+}
+
+@media (max-width: 654px) {
+    .landing .col {
+        margin-right: 0;
+        padding-inline: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .landing .col p {
+        width: 100%;
+        margin: auto;
+    }
+
+    .landing .col .btn {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 654px) {
+    .bg-img {
+        background-image: url(../public/bg-responsvie.jpg);
+    }
+
+    .overlay {
+        background-color: #000000da;
+        min-height: 100vh;
+        z-index: 10000;
+    }
+
+    .landing .container {
+        padding-inline: 20px;
+        display: block;
+    }
+}
