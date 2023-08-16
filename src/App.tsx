@@ -55,8 +55,16 @@ const App = () => {
           <Landing
             goDown={() => scrollToSection(footer)}
             {...(openSelectedList === true
-              ? { disapperH1: "none-h1", disapperP: "none-p" }
-              : { disapperH1: "un-h1", disapperP: "un-p" })}
+              ? {
+                  disapperH1: "none-h1",
+                  disapperP: "none-p",
+                  disapperBtn: "none-btn",
+                }
+              : {
+                  disapperH1: "un-h1",
+                  disapperP: "un-p",
+                  disapperBtn: "un-btn",
+                })}
           />
         </div>
       </div>

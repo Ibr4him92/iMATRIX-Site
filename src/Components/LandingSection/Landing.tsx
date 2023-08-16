@@ -6,8 +6,9 @@ interface Props {
   goDown: () => void;
   disapperH1?: string | undefined;
   disapperP?: string | undefined;
+  disapperBtn?: string | undefined;
 }
-const Landing = ({ goDown, disapperH1, disapperP }: Props) => {
+const Landing = ({ goDown, disapperH1, disapperP, disapperBtn }: Props) => {
   return (
     <div className="landing">
       <div className="container">
@@ -20,7 +21,7 @@ const Landing = ({ goDown, disapperH1, disapperP }: Props) => {
             time, they would make a lot more money.
           </p>
           <div className="btn">
-            <button data-aos="fade-out">Get Started</button>
+            <button className={disapperBtn}>Get Started</button>
           </div>
           <div className="social">
             <BsFacebook id="facebook" />

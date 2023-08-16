@@ -113,6 +113,16 @@
     transition: 0.5s;
 }
 
+.none-btn {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.un-btn {
+    opacity: 1;
+    transition: 0.5s;
+}
+
 /* Responsive */
 /* Landing */
 

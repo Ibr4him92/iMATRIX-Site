@@ -66,10 +66,39 @@ const Header = ({
               <AiFillCloseCircle onClick={onCloseList} />
             </div>
             <ul className="list-item">
-              <li>Home</li>
-              <li>About</li>
-              <li>Videos</li>
-              <li>Contact</li>
+              <li onClick={onCloseList}>Home</li>
+              <li
+                onClick={(e) => {
+                  handleLinkClick(e, onScrollAbout);
+                  onCloseList();
+                }}
+              >
+                About
+              </li>
+              <li
+                onClick={(e) => {
+                  handleLinkClick(e, onScrollContract);
+                  onCloseList();
+                }}
+              >
+                Contract
+              </li>
+              <li
+                onClick={(e) => {
+                  handleLinkClick(e, onScrollVideo);
+                  onCloseList();
+                }}
+              >
+                Videos
+              </li>
+              <li
+                onClick={(e) => {
+                  handleLinkClick(e, onScrollContact);
+                  onCloseList();
+                }}
+              >
+                Contact
+              </li>
             </ul>
           </div>
         </div>

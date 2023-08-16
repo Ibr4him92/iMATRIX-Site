@@ -93,13 +93,16 @@ header .bar .list-item {
 
 header .bar .list-item li {
     padding: 0px 5px;
-    place-self: center;
     transition: 0.3s;
     z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .bar .list-item li:hover {
-    color: #f1f1f1;
+    color: whitesmoke;
 }
 
 header .bar .list-item li:before {
@@ -109,7 +112,7 @@ header .bar .list-item li:before {
     background-color: white;
     height: 1px;
     left: 0;
-    margin-top: 45px;
+    margin-top: 65px;
 }
 
 header .bar .close {
