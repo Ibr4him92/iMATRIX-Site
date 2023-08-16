@@ -21,7 +21,9 @@ const Landing = ({ goDown, disapperH1, disapperP, disapperBtn }: Props) => {
             time, they would make a lot more money.
           </p>
           <div className="btn">
-            <button className={disapperBtn}>Get Started</button>
+            <a href="/login">
+              <button className={disapperBtn}>Get Started</button>
+            </a>
           </div>
           <div className="social">
             <BsFacebook id="facebook" />
