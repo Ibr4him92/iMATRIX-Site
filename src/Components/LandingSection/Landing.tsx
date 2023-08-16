@@ -4,16 +4,18 @@ import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 interface Props {
   goDown: () => void;
+  disapperH1?: string | undefined;
+  disapperP?: string | undefined;
 }
-const Landing = ({ goDown }: Props) => {
+const Landing = ({ goDown, disapperH1, disapperP }: Props) => {
   return (
     <div className="landing">
       <div className="container">
         <div className="col">
-          <h1 data-aos="fade-in">
+          <h1 className={disapperH1}>
             Welcome, To The <span> World Of Money !!</span>
           </h1>
-          <p>
+          <p className={disapperP}>
             If most traders would learn to sit on their hands 50 percent of the
             time, they would make a lot more money.
           </p>

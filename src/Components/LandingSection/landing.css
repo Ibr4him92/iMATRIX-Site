@@ -16,15 +16,16 @@
     padding-inline: 60px;
 }
 
-.landing .col h1 {
+.landing .col .un-h1 {
     font-size: 30px;
     letter-spacing: 2px;
-    line-height: 45 px;
+    line-height: 45px;
     color: white;
     transition: 0.5s;
+    opacity: 1;
 }
 
-.landing .col p {
+.landing .social .un-p {
     color: white;
     font-size: 20px;
 }
@@ -90,6 +91,26 @@
 
 .landing .social i:hover {
     color: #f1f1f1d3;
+}
+
+.none-h1 {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.un-h1 {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.none-p {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.un-p {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 /* Responsive */
@@ -174,11 +195,12 @@
 
 
 @media (max-width: 737px) {
-    .landing .col h1 {
+    .landing .col .un-h1 {
         font-size: 20px;
+        opacity: 1;
     }
 
-    .landing .col p {
+    .landing .col .un-p {
         font-size: 10px;
         width: 300px;
     }

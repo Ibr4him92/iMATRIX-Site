@@ -3,7 +3,7 @@
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Header from "./Components/HeaderSection/Header";
 import Landing from "./Components/LandingSection/Landing";
 import About from "./Components/AboutSeaction/About";
@@ -31,6 +31,8 @@ const App = () => {
     });
   };
 
+  const [openSelectedList, setOpenSelectedList] = useState(false);
+
   return (
     <>
       <ScrollToTop />
@@ -41,8 +43,21 @@ const App = () => {
             onScrollContract={() => scrollToSection(contract)}
             onScrollVideo={() => scrollToSection(videoSection)}
             onScrollContact={() => scrollToSection(contact)}
+            onOpenList={() => setOpenSelectedList(true)}
+            {...(openSelectedList == true
+              ? { childern: "-show" }
+              : { childern: "" })}
+            onCloseList={() => setOpenSelectedList(false)}
+            {...(openSelectedList === true
+              ? { disapperBar: "none-bar" }
+              : { disapperBar: "un-bar" })}
           />
-          <Landing goDown={() => scrollToSection(footer)} />
+          <Landing
+            goDown={() => scrollToSection(footer)}
+            {...(openSelectedList === true
+              ? { disapperH1: "none-h1", disapperP: "none-p" }
+              : { disapperH1: "un-h1", disapperP: "un-p" })}
+          />
         </div>
       </div>
       <About imgSrc="../public/AboutImage.png" toScroll={about} />

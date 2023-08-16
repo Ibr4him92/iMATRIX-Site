@@ -6,6 +6,10 @@ interface Props {
   onScrollContract: () => void;
   onScrollVideo: () => void;
   onScrollContact: () => void;
+  onOpenList: () => void;
+  onCloseList: () => void;
+  childern?: string | undefined;
+  disapperBar: string | undefined;
 }
 
 const Header = ({
@@ -13,6 +17,10 @@ const Header = ({
   onScrollContact,
   onScrollContract,
   onScrollVideo,
+  onOpenList,
+  onCloseList,
+  childern,
+  disapperBar,
 }: Props) => {
   const handleLinkClick = (e: React.MouseEvent, scrollFunction: () => void) => {
     e.preventDefault();
@@ -52,10 +60,10 @@ const Header = ({
           </li>
         </ul>
         <div className="bar">
-          <FaBars />
-          <div className="list">
+          <FaBars onClick={onOpenList} className={disapperBar} />
+          <div className={"list" + childern}>
             <div className="close">
-              <AiFillCloseCircle />
+              <AiFillCloseCircle onClick={onCloseList} />
             </div>
             <ul className="list-item">
               <li>Home</li>

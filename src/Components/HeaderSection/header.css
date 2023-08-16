@@ -44,6 +44,18 @@ header ul a {
     transition: 0.3s;
 }
 
+.none-bar {
+    opacity: 0;
+    transition: 0.5s;
+    display: none;
+}
+
+.un-bar {
+    opacity: 1;
+    transition: 0.5s;
+    display: block;
+}
+
 .bar:hover {
     color: #f1f1f1d3;
 }
@@ -62,6 +74,16 @@ header .bar .list {
     transition: 0.5s;
 }
 
+header .bar .list-show {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 41vh;
+    right: 0;
+    top: 0px;
+    transition: 0.5s;
+}
+
 header .bar .list-item {
     position: relative;
     display: grid;
@@ -70,6 +92,7 @@ header .bar .list-item {
 }
 
 header .bar .list-item li {
+    padding: 0px 5px;
     place-self: center;
     transition: 0.3s;
     z-index: 1000;
@@ -86,7 +109,7 @@ header .bar .list-item li:before {
     background-color: white;
     height: 1px;
     left: 0;
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 header .bar .close {
