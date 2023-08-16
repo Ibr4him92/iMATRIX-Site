@@ -42,9 +42,7 @@ const Contract = ({ imgSrc, toScroll }: Props) => {
               [3] Minimum payment in one month is 15 JOD.
             </p>
           </div>
-          <h2 data-aos="fade-out">
-            For More Details <a href="">Click Here</a> .
-          </h2>
+          <h2 data-aos="fade-out">For More Details Contact Us!!</h2>
         </div>
         <div className="item">
           <img src={imgSrc} data-aos="fade-out" />

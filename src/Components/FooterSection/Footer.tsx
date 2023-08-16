@@ -1,13 +1,13 @@
 import "./footer.css";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import {
-  BsWhatsapp,
   BsFacebook,
-  BsTwitter,
+  BsInstagram,
   BsTelephoneFill,
   BsFillClockFill,
 } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
+import { FaTelegram } from "react-icons/fa";
 
 interface Props {
   toScroll: React.MutableRefObject<null>;
@@ -25,9 +25,15 @@ const Footer = ({ toScroll }: Props) => {
             you're wrong.
           </p>
           <div className="social">
-            <BsFacebook data-aos="fade-in" id="facebook" />
-            <BsWhatsapp data-aos="fade-in" id="whatsapp" />
-            <BsTwitter data-aos="fade-in" id="twitter" />
+            <a href="https://t.me/iMATRIX_escaping">
+              <FaTelegram data-aos="fade-in" id="telegram" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100094598252430">
+              <BsFacebook data-aos="fade-in" id="facebook" />
+            </a>
+            <a href="https://www.instagram.com/i.m.a.t.r.i.x/">
+              <BsInstagram data-aos="fade-in" id="instagram" />
+            </a>
           </div>
         </div>
         <div className="box">
@@ -63,9 +69,9 @@ const Footer = ({ toScroll }: Props) => {
         <div className="box">
           <p data-aos="fade-in">
             <BsTelephoneFill id="phone" /> Our PhoneNumbers:
-            <br /> <span>715-597-3894</span>
+            <br /> <span>+962799135206</span>
             <br />
-            520-797-5183
+            +962797986702
           </p>
           <p data-aos="fade-in">
             <MdLocationPin id="location" />
@@ -79,7 +85,7 @@ const Footer = ({ toScroll }: Props) => {
         </div>
       </div>
       <p className="p1">
-        Made By <a href="">Ibr4him_92</a>
+        Made By <a href="https://www.instagram.com/ibr4him_92/">Ibr4him_92</a>
       </p>
     </footer>
   );

@@ -81,9 +81,14 @@
     transform: 0.5s;
 }
 
+.landing .social a {
+    text-decoration: none;
+    color: white;
+}
+
 .landing .social #facebook,
-#whatsapp,
-#twitter {
+#telegram,
+#instagram {
     margin-inline-end: 30px;
     transition: 0.3s;
     cursor: pointer;
@@ -257,8 +262,8 @@
     }
 
     .landing .social #facebook,
-    #whatsapp,
-    #twitter {
+    #telegram,
+    #instagram {
         transform: translateY(-50px);
     }
 }

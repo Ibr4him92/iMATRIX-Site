@@ -52,6 +52,10 @@ footer .social {
     position: relative;
 }
 
+footer a {
+    color: white;
+}
+
 footer #facebook {
     padding: 20px;
     font-size: 66px;
@@ -65,7 +69,7 @@ footer #facebook:hover {
     background-color: #3b5998;
 }
 
-footer #whatsapp {
+footer #telegram {
     padding: 20px;
     font-size: 66px;
     background-color: #191919;
@@ -73,11 +77,11 @@ footer #whatsapp {
     transition: 0.3s;
 }
 
-footer #whatsapp:hover {
-    background-color: #075E54;
+footer #telegram:hover {
+    background-color: #229ED9;
 }
 
-footer #twitter {
+footer #instagram {
     padding: 20px;
     font-size: 66px;
     background-color: #191919;
@@ -85,8 +89,8 @@ footer #twitter {
     transition: 0.3s;
 }
 
-footer #twitter:hover {
-    background-color: #00acee;
+footer #instagram:hover {
+    background-color: #C13584;
 }
 
 footer .box:nth-child(2) h3 {
@@ -131,7 +135,7 @@ footer #right-arrow {
     font-size: 20px;
 }
 
-footer .box:nth-child(2) ul li:hover {
+footer .box:nth-child(2) ul li:not(:first-child):hover {
     margin-left: 10px;
 }
 
@@ -169,6 +173,22 @@ footer .p1 a {
 }
 
 /* Responsive */
+@media (min-width : 1024px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+}
+
+@media (min-width : 1300px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+}
+
 @media (max-width : 991px) {
     footer {
         padding-inline: 20px;
@@ -212,7 +232,7 @@ footer .p1 a {
         font-size: 15px;
         color: white;
         font-weight: 600;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 
     footer .social {
@@ -231,24 +251,24 @@ footer .p1 a {
         background-color: #3b5998;
     }
 
-    footer #whatsapp {
+    footer #telegram {
         padding: 20px;
         background-color: #191919;
         cursor: pointer;
     }
 
-    footer #whatsapp:hover {
-        background-color: #075E54;
+    footer #telegram:hover {
+        background-color: #229ED9;
     }
 
-    footer #twitter {
+    footer #instagram {
         padding: 20px;
         background-color: #191919;
         cursor: pointer;
     }
 
-    footer #twitter:hover {
-        background-color: #00acee;
+    footer #instagram:hover {
+        background-color: #C13584;
     }
 
     footer .box:nth-child(2) h3 {
@@ -323,21 +343,5 @@ footer .p1 a {
     footer .p1 a {
         color: #777;
         text-decoration: none;
-    }
-}
-
-@media (min-width : 1024px) {
-    footer .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 20px;
-    }
-}
-
-@media (min-width : 1300px) {
-    footer .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 20px;
     }
 }

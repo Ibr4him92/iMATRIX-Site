@@ -1,7 +1,7 @@
 import "./landing.css";
-import { BsWhatsapp, BsFacebook, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
-
+import { FaTelegram } from "react-icons/fa";
 interface Props {
   goDown: () => void;
   disapperH1?: string | undefined;
@@ -26,9 +26,15 @@ const Landing = ({ goDown, disapperH1, disapperP, disapperBtn }: Props) => {
             </a>
           </div>
           <div className="social">
-            <BsFacebook id="facebook" />
-            <BsWhatsapp id="whatsapp" />
-            <BsTwitter id="twitter" />
+            <a href="https://www.facebook.com/profile.php?id=100094598252430">
+              <BsFacebook id="facebook" />
+            </a>
+            <a href="https://www.instagram.com/i.m.a.t.r.i.x/">
+              <BsInstagram id="instagram" />
+            </a>
+            <a href="https://t.me/iMATRIX_escaping">
+              <FaTelegram id="telegram" />
+            </a>
           </div>
           <div className="go-down">
             {/* onclick="ScrollToAbout()" */}
