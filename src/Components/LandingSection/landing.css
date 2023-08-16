@@ -270,7 +270,7 @@
 
 @media (max-width: 654px) {
     .bg-img {
-        background-image: url(../public/bg-responsvie.jpg);
+        background-image: url(./img/bg-responsvie.jpg);
     }
 
     .overlay {
