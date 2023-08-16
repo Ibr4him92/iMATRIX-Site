@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import "./login.css";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
+
 const Login = () => {
+  useEffect(() => {
+    document.title = "iMATRIX/Login";
+  }, []);
+
   return (
     <>
       <div className="login">

@@ -1,11 +1,11 @@
 import "./contract.css";
+import ContractImage from "./img/ContractImage.jpg";
 
 interface Props {
-  imgSrc: string;
   toScroll: React.MutableRefObject<null>;
 }
 
-const Contract = ({ imgSrc, toScroll }: Props) => {
+const Contract = ({ toScroll }: Props) => {
   return (
     <div className="contract" ref={toScroll}>
       <div className="main-heading">
@@ -45,7 +45,7 @@ const Contract = ({ imgSrc, toScroll }: Props) => {
           <h2 data-aos="fade-out">For More Details Contact Us!!</h2>
         </div>
         <div className="item">
-          <img src={imgSrc} data-aos="fade-out" />
+          <img src={ContractImage} data-aos="fade-out" />
         </div>
       </div>
     </div>

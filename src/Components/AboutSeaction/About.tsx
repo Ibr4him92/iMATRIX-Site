@@ -1,11 +1,10 @@
 import "./about.css";
-
+import AboutImage from "./img/AboutImage.png";
 interface Props {
-  imgSrc: string;
   toScroll: React.MutableRefObject<null>;
 }
 
-const About = ({ imgSrc, toScroll }: Props) => {
+const About = ({ toScroll }: Props) => {
   return (
     <div className="about" ref={toScroll}>
       <div className="main-heading">
@@ -34,7 +33,7 @@ const About = ({ imgSrc, toScroll }: Props) => {
           </p>
         </div>
         <div className="item">
-          <img src={imgSrc} data-aos="fade-out" />
+          <img src={AboutImage} data-aos="fade-out" />
         </div>
       </div>
     </div>

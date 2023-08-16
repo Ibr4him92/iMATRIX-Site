@@ -68,10 +68,10 @@ const App = () => {
           />
         </div>
       </div>
-      <About imgSrc="../public/AboutImage.png" toScroll={about} />
-      <Contract imgSrc="../public/ContractImage.jpg" toScroll={contract} />
-      <Video imgSrc="../public/videoImage.jpg" toScroll={videoSection} />
-      <Contact imgSrc="../public/contact.svg" toScroll={contact} />
+      <About toScroll={about} />
+      <Contract toScroll={contract} />
+      <Video toScroll={videoSection} />
+      <Contact toScroll={contact} />
       <Footer toScroll={footer} />
     </>
   );

@@ -1,10 +1,10 @@
 import "./video.css";
 import { FaRandom } from "react-icons/fa";
+import VideoImage from "./img/videoImage.jpg";
 interface Props {
-  imgSrc: string;
   toScroll: React.MutableRefObject<null>;
 }
-const Video = ({ imgSrc, toScroll }: Props) => {
+const Video = ({ toScroll }: Props) => {
   return (
     <div className="videos" id="videos" ref={toScroll}>
       <div className="main-heading">
@@ -47,7 +47,7 @@ const Video = ({ imgSrc, toScroll }: Props) => {
             </ul>
           </div>
           <div className="preview">
-            <img decoding="async" src={imgSrc} alt="" />
+            <img decoding="async" src={VideoImage} alt="" />
           </div>
         </div>
       </div>

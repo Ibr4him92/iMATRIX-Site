@@ -1,11 +1,10 @@
 import "./contact.css";
-
+import ContactImage from "./img/contact.svg";
 interface Props {
-  imgSrc: string;
   toScroll: React.MutableRefObject<null>;
 }
 
-const Contact = ({ imgSrc, toScroll }: Props) => {
+const Contact = ({ toScroll }: Props) => {
   return (
     <div className="contact" ref={toScroll}>
       <div className="main-heading">
@@ -28,7 +27,7 @@ const Contact = ({ imgSrc, toScroll }: Props) => {
           <button data-aos="fade-out">Submit</button>
         </div>
         <div className="item">
-          <img src={imgSrc} data-aos="fade-out" />
+          <img src={ContactImage} data-aos="fade-out" />
         </div>
       </div>
     </div>
