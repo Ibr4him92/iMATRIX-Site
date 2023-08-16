@@ -222,6 +222,7 @@
     .landing .col p {
         max-width: 500px;
     }
+
 }
 
 @media (max-width: 1199px) {
@@ -253,6 +254,12 @@
         padding-top: 30px;
         display: flex;
         justify-content: center;
+    }
+
+    .landing .social #facebook,
+    #whatsapp,
+    #twitter {
+        transform: translateY(-50px);
     }
 }
 
