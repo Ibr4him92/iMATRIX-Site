@@ -13,7 +13,7 @@ const Landing = ({ goDown, disapperH1, disapperP, disapperBtn }: Props) => {
     <div className="landing">
       <div className="container">
         <div className="col">
-          <h1 className={disapperH1}>
+          <h1 className={disapperH1} id="h1-landing">
             Welcome, To The <span> World Of Money !!</span>
           </h1>
           <p className={disapperP}>

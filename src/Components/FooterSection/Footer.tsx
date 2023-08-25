@@ -85,7 +85,7 @@ const Footer = ({ toScroll }: Props) => {
         </div>
       </div>
       <p className="p1">
-        Made By <a href="https://www.instagram.com/ibr4him_92/">Ibr4him_92</a>
+        Made By <a href="https://www.instagram.com/debugger_92/">Debugger</a>
       </p>
     </footer>
   );
