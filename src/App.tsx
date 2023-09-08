@@ -53,7 +53,7 @@ const App = () => {
               : { disapperBar: "un-bar" })}
           />
           <Landing
-            goDown={() => scrollToSection(footer)}
+            goDown={() => scrollToSection(contract)}
             {...(openSelectedList === true
               ? {
                   disapperH1: "none-h1",
